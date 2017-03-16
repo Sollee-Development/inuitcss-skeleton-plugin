@@ -1,7 +1,5 @@
 
-$inuit-skeleton-path-to-skeleton: "../skeleton-scss/" !default;
-
-@import $inuit-skeleton-path-to-skeleton + "base/variables";
+@import "../skeleton-scss/base/variables";
 
 // Base Skeleton Styles (rewritten to not have to override certain properties)
 @import "base/base-styles";
@@ -11,7 +9,7 @@ $inuit-skeleton-path-to-skeleton: "../skeleton-scss/" !default;
 // Use recopied version of the default button component of inuit
 @import "components/components.buttons";
 
-@import $inuit-skeleton-path-to-skeleton + "modules/code";
-@import $inuit-skeleton-path-to-skeleton + "modules/forms";
-@import $inuit-skeleton-path-to-skeleton + "modules/lists";
-@import $inuit-skeleton-path-to-skeleton + "modules/tables";
+@import "../skeleton-scss/modules/code";
+@import "../skeleton-scss/modules/forms";
+@import "../skeleton-scss/modules/lists";
+@import "../skeleton-scss/modules/tables";
