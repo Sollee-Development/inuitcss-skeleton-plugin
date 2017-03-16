@@ -1,5 +1,5 @@
 
-@import "../skeleton-scss/base/variables";
+@import "../skeleton-scss/scss/base/variables";
 
 // Base Skeleton Styles (rewritten to not have to override certain properties)
 @import "base/base-styles";
@@ -9,7 +9,7 @@
 // Use recopied version of the default button component of inuit
 @import "components/components.buttons";
 
-@import "../skeleton-scss/modules/code";
-@import "../skeleton-scss/modules/forms";
-@import "../skeleton-scss/modules/lists";
-@import "../skeleton-scss/modules/tables";
+@import "../skeleton-scss/scss/modules/code";
+@import "../skeleton-scss/scss/modules/forms";
+@import "../skeleton-scss/scss/modules/lists";
+@import "../skeleton-scss/scss/modules/tables";
