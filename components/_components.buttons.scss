@@ -25,12 +25,20 @@
   cursor: pointer; /* [5] */
   padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
   transition: $global-transition;
+  border: 0;
   border-radius: $global-radius;
 }
 
+/* Skeleton Button Styles
+   ========================================================================== */
 
-
-
+.c-btn--skel {
+    text-transform: uppercase;
+    font-size: 11px;
+    white-space: nowrap;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
 /* Style variants
    ========================================================================== */
@@ -40,7 +48,12 @@ $btn-primary-color: #fff !default;
 $btn-primary-focus: #3774a2 !default;
 
 $btn-secondary-background: #2f4054 !default;
+$btn-secondary-color: #fff !default;
 $btn-secondary-focus: #1d2733 !default;
+
+$btn-tertiary-background: #2f4054 !default;
+$btn-tertiary-color: #1d2733 !default;
+$btn-tertiary-focus: #1d2733 !default;
 
 .c-btn--primary {
   background-color: $btn-primary-background;
@@ -68,7 +81,7 @@ $btn-secondary-focus: #1d2733 !default;
   &:active,
   &:focus {
     text-decoration: none;
-    color: $btn-primary-color;
+    color: $btn-secondary-color;
   }
 
   &:hover,
@@ -79,20 +92,19 @@ $btn-secondary-focus: #1d2733 !default;
 }
 
 .c-btn--tertiary {
-  background-color: $btn-primary-color;
-  color: $btn-primary-background;
+  background-color: $btn-tertiary-color;
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none;
-    color: $btn-primary-background;
+    color: $btn-tertiary-background;
   }
 
   &:hover,
   &:focus {
-    color: $btn-primary-focus;
+    color: $btn-tertiary-focus;
   }
 
 }
@@ -123,7 +135,7 @@ $btn-secondary-focus: #1d2733 !default;
  * Ghost buttons have see-through backgrounds and are bordered.
  */
 
-$btn-ghost-border-width: 2px;
+$btn-ghost-border-width: 1px !default;
 
 .c-btn--ghost {
   border: $btn-ghost-border-width solid currentColor;
@@ -165,22 +177,13 @@ $btn-ghost-border-width: 2px;
   }
 
   &.c-btn--tertiary {
-    color: $btn-primary-color;
+    color: $btn-tertiary-color;
 
     &:hover,
     &:focus {
-      color: $btn-primary-color;
+      color: $btn-tertiary-focus;
     }
 
   }
 
-}
-
-/* Skeleton Button Styles
-   ==================================================================== */
-
-.c-btn--skel {
-   text-transform: uppercase;
-   font-weight: 600;
-   white-space: nowrap;
 }
