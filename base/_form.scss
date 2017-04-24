@@ -1,0 +1,24 @@
+input {
+    &[type="email"],
+    &[type="number"],
+    &[type="search"],
+    &[type="text"],
+    &[type="tel"],
+    &[type="url"],
+    &[type="password"] {
+      height: 38px;
+      padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+      background-color: #fff;
+      border: 1px solid lighten($border-color, 8.8%);
+      border-radius: $global-radius;
+      box-shadow: none;
+      box-sizing: border-box;
+    }
+}
+
+input,
+textarea,
+select,
+fieldset {
+    margin-bottom: 15px;
+}
