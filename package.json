@@ -1,13 +1,13 @@
 {
     "name" : "inuitcss-skeleton-plugin",
-    "version" : "0.1.3",
-    "homepage" : "https://github.com/solleer/inuitcss-skeleton-plugin",
+    "version" : "0.1.6",
+    "homepage" : "https://github.com/Sollee-Development/inuitcss-skeleton-plugin",
     "bugs" : {
-        "url" : "https://github.com/solleer/inuitcss-skeleton-plugin/issues"
+        "url" : "https://github.com/Sollee-Development/inuitcss-skeleton-plugin/issues"
     },
     "repository" : {
         "type" : "git",
-        "url" : "https://github.com/solleer/inuitcss-skeleton-plugin"
+        "url" : "https://github.com/Sollee-Development/inuitcss-skeleton-plugin"
     },
     "dependencies" : {
         "skeleton-scss" : "2.0.4"
