@@ -1,66 +1,59 @@
-@include mq($from : phablet) {
-    $inuit-font-size-h1: 10 * 5.0px;
-    $inuit-font-size-h2: 10 * 4.2px;
-    $inuit-font-size-h3: 10 * 3.6px;
-    $inuit-font-size-h4: 10 * 3.0px;
-    $inuit-font-size-h5: 10 * 2.4px;
-    $inuit-font-size-h6: 10 * 1.5px;
+@mixin inuit-skeleton-headers($h1, $h2, $h3, $h4, $h5, $h6) {
 
     // Manually Include these because you can't have an import in a mixin
     h1 {
-      @include inuit-font-size($inuit-font-size-h1);
+      @include inuit-font-size($h1);
     }
 
     h2 {
-      @include inuit-font-size($inuit-font-size-h2);
+      @include inuit-font-size($h2);
     }
 
     h3 {
-      @include inuit-font-size($inuit-font-size-h3);
+      @include inuit-font-size($h3);
     }
 
     h4 {
-      @include inuit-font-size($inuit-font-size-h4);
+      @include inuit-font-size($h4);
     }
 
     h5 {
-      @include inuit-font-size($inuit-font-size-h5);
+      @include inuit-font-size($h5);
     }
 
     h6 {
-      @include inuit-font-size($inuit-font-size-h6);
+      @include inuit-font-size($h6);
     }
     .u-h1 {
-      @include inuit-font-size($inuit-font-size-h1, $important: true);
+      @include inuit-font-size($h1, $important: true);
     }
 
     .u-h2 {
-      @include inuit-font-size($inuit-font-size-h2, $important: true);
+      @include inuit-font-size($h2, $important: true);
     }
 
     .u-h3 {
-      @include inuit-font-size($inuit-font-size-h3, $important: true);
+      @include inuit-font-size($h3, $important: true);
     }
 
     .u-h4 {
-      @include inuit-font-size($inuit-font-size-h4, $important: true);
+      @include inuit-font-size($h4, $important: true);
     }
 
     .u-h5 {
-      @include inuit-font-size($inuit-font-size-h5, $important: true);
+      @include inuit-font-size($h5, $important: true);
     }
 
     .u-h6 {
-      @include inuit-font-size($inuit-font-size-h6, $important: true);
+      @include inuit-font-size($h6, $important: true);
     }
 }
 
-$inuit-font-size-h1: 10 * 4.0px;
-$inuit-font-size-h2: 10 * 3.6px;
-$inuit-font-size-h3: 10 * 3.0px;
-$inuit-font-size-h4: 10 * 2.4px;
-$inuit-font-size-h5: 10 * 1.8px;
-$inuit-font-size-h6: 10 * 1.5px;
+@include inuit-skeleton-headers(40px, 36px, 30px, 24px, 18px, 15px);
+
+@include mq($from : phablet) {
+    @include inuit-skeleton-headers(50px, 42px, 36px, 30px, 24px, 15px);
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;

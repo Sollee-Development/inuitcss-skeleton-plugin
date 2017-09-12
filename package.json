@@ -1,6 +1,6 @@
 {
     "name" : "inuitcss-skeleton-plugin",
-    "version" : "0.1.6",
+    "version" : "0.1.7",
     "homepage" : "https://github.com/Sollee-Development/inuitcss-skeleton-plugin",
     "bugs" : {
         "url" : "https://github.com/Sollee-Development/inuitcss-skeleton-plugin/issues"
@@ -10,6 +10,7 @@
         "url" : "https://github.com/Sollee-Development/inuitcss-skeleton-plugin"
     },
     "dependencies" : {
-        "skeleton-scss" : "2.0.4"
+        "skeleton-scss" : "2.0.4",
+        "sass-mq" : "4.0.0-beta.1"
     }
 }
