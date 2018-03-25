@@ -29,6 +29,12 @@
   border-radius: $global-radius;
 }
 
+.c-btn--inline {
+    vertical-align: baseline;
+    padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit;
+    height: $form-input-height;
+}
+
 /* Skeleton Button Styles
    ========================================================================== */
 
