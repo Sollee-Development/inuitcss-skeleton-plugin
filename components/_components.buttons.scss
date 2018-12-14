@@ -98,14 +98,14 @@ $btn-tertiary-focus: #1d2733 !default;
 }
 
 .c-btn--tertiary {
-  background-color: $btn-tertiary-color;
+  background-color: $btn-tertiary-background;
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none;
-    color: $btn-tertiary-background;
+    color: $btn-tertiary-color;
   }
 
   &:hover,
