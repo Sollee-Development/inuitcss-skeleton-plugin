@@ -110,7 +110,7 @@ $btn-tertiary-focus: #1d2733 !default;
 
   &:hover,
   &:focus {
-    color: $btn-tertiary-focus;
+    background-color: $btn-tertiary-focus;
   }
 
 }
